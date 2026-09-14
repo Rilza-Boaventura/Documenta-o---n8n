@@ -1,0 +1,395 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documentação n8n</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="logo">
+            <span></span>
+            n8n Docs
+        </div>
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Pesquisar na documentação..."
+            >
+        </div>
+
+    </header>
+
+
+    <!-- LAYOUT -->
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <h3>DOCUMENTAÇÃO</h3>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#introducao">Introdução</a>
+                <a href="#instalacao">Instalação</a>
+                <a href="#workflows">Workflows</a>
+                <a href="#nodes">Nodes</a>
+                <a href="#integracoes">Integrações</a>
+                <a href="#automacao">Automação</a>
+                <a href="#projeto">Projeto prático</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="content">
+
+
+            <!-- INÍCIO -->
+            <section
+                id="inicio"
+                class="section"
+                data-keywords="início documentação n8n"
+            >
+
+                <div class="hero">
+
+                    <span class="badge">DOCUMENTAÇÃO</span>
+
+                    <h1>n8n</h1>
+
+                    <p>
+                        Guia introdutório para aprender automação de processos
+                        utilizando a plataforma n8n.
+                    </p>
+
+                    <a href="#introducao" class="button">
+                        Começar agora
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- INTRODUÇÃO -->
+            <section
+                id="introducao"
+                class="section"
+                data-keywords="introdução n8n"
+            >
+
+                <h2>O que é o n8n?</h2>
+
+                <p>
+                    O n8n é uma plataforma de automação de workflows que permite
+                    conectar diferentes aplicações, serviços e sistemas.
+                </p>
+
+                <p>
+                    Com ele é possível criar processos automatizados utilizando
+                    diferentes nodes e integrações.
+                </p>
+
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>Workflows</h3>
+
+                        <p>
+                            Organize as etapas de um processo automatizado.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Nodes</h3>
+
+                        <p>
+                            Cada node representa uma ação ou etapa do processo.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Integração</h3>
+
+                        <p>
+                            Conecte APIs, bancos de dados e outras ferramentas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INSTALAÇÃO -->
+            <section
+                id="instalacao"
+                class="section"
+                data-keywords="instalação npm ambiente"
+            >
+
+                <h2>Instalação</h2>
+
+                <p>
+                    O n8n pode ser executado de diferentes formas, incluindo
+                    ambientes locais e servidores.
+                </p>
+
+
+                <div class="code">
+
+                    <p>
+                        npm install n8n -g
+                    </p>
+
+                </div>
+
+
+                <p>
+                    Depois da instalação, o ambiente pode ser iniciado
+                    utilizando o comando correspondente ao ambiente configurado.
+                </p>
+
+            </section>
+
+
+            <!-- WORKFLOWS -->
+            <section
+                id="workflows"
+                class="section"
+                data-keywords="workflows gatilho validação processamento resultado"
+            >
+
+                <h2>Workflows</h2>
+
+                <p>
+                    Um workflow representa o fluxo de execução de uma automação.
+                </p>
+
+
+                <div class="workflow">
+
+                    <div>Gatilho</div>
+
+                    <span></span>
+
+                    <div>Validação</div>
+
+                    <span></span>
+
+                    <div>Processamento</div>
+
+                    <span></span>
+
+                    <div>Resultado</div>
+
+                </div>
+
+            </section>
+
+
+            <!-- NODES -->
+            <section
+                id="nodes"
+                class="section"
+                data-keywords="nodes node trigger http request code if set database email"
+            >
+
+                <h2>Nodes</h2>
+
+                <p>
+                    Nodes são os componentes utilizados para construir um
+                    workflow no n8n.
+                </p>
+
+
+                <ul class="list">
+
+                    <li>Trigger</li>
+                    <li>HTTP Request</li>
+                    <li>Code</li>
+                    <li>IF</li>
+                    <li>Set</li>
+                    <li>Database</li>
+                    <li>E-mail</li>
+
+                </ul>
+
+            </section>
+
+
+            <!-- INTEGRAÇÕES -->
+            <section
+                id="integracoes"
+                class="section"
+                data-keywords="integrações api apis banco de dados email"
+            >
+
+                <h2>Integrações</h2>
+
+                <p>
+                    O n8n permite conectar diferentes sistemas e serviços.
+                </p>
+
+
+                <div class="cards">
+
+
+                    <div class="card">
+
+                        <h3>APIs</h3>
+
+                        <p>
+                            Consumo e envio de informações através de APIs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Banco de dados</h3>
+
+                        <p>
+                            Integração com bancos de dados.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>E-mail</h3>
+
+                        <p>
+                            Envio automático de notificações.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- AUTOMAÇÃO -->
+            <section
+                id="automacao"
+                class="section"
+                data-keywords="automação de processos formulário validação banco notificação"
+            >
+
+                <h2>Automação de processos</h2>
+
+                <p>
+                    O n8n pode ser utilizado para automatizar tarefas
+                    repetitivas e integrar diferentes etapas de um processo.
+                </p>
+
+
+                <div class="highlight">
+
+                    <strong>Exemplo:</strong>
+
+                    <p>
+                        Receber um formulário → validar os dados →
+                        registrar no banco → enviar uma notificação.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJETO PRÁTICO -->
+            <section
+                id="projeto"
+                class="section"
+                data-keywords="projeto prático departamento pessoal funcionário validação banco notificação"
+            >
+
+                <h2>Projeto prático</h2>
+
+                <p>
+                    Nesta documentação podemos desenvolver um projeto completo
+                    de automação utilizando o n8n.
+                </p>
+
+
+                <div class="project">
+
+                    <h3>Automação do Departamento Pessoal</h3>
+
+                    <p>
+                        Exemplo de processo:
+                    </p>
+
+
+                    <div class="flow">
+
+                        <span>Dados do funcionário</span>
+
+                        <span></span>
+
+                        <span>Validação</span>
+
+                        <span></span>
+
+                        <span>Banco de dados</span>
+
+                        <span></span>
+
+                        <span>Notificação</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            Documentação n8n Projeto Front-End
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
